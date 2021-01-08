@@ -9,10 +9,10 @@ const mapStateToProps = (state) => {
     }
 }
 
-const mapDispatchToProps = (dp) => {
+const mapDispatchToProps = (dispatch) => {
     return {
         receiveTodo: (todo) => {
-            dp(receiveTodo(todo))
+            dispatch(receiveTodo(todo))
         }
     }
 }
